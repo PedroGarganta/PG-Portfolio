@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portfolio</title>
+
+</head>
+<body>
+    <!-- Seccion inicio -->
+        <span class="sombra">
+            <section class="inicio" id="inicio">
+                <div class="contenido">
+                    <header>
+                        <div class="logo">
+                            <i class="fa-brands fa-codepen"></i>
+                            <h1>Pedro</h1>
+                        </div>
+                        <nav id="nav" class="">
+                            <a href="#inicio">Inicio</a>
+                            <a href="#habilidades">Habilidades</a>
+                            <a href="trabajos">Trabajos</a>
+                            <a href="#contacto">Contacto</a>
+                        </nav>
+
+                        <!-- Icono menu responsive -->
+                        <div id="icono-nav" onclick="responsiveMenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+
+                        <div class="redes">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </header>
+
+                    <div class="fila">
+                        <div class="col">
+                            <h2>Desarrollador Fullstack</h2>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+                            <button class="btn btn-1">Descargar CV</button>
+                        </div>
+                        <div class="col">
+                            <div class="contenedor-img">
+                                <img src="img/foto-inicio.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </span>
+
+    <!-- Seccion habilidades -->
+    <section class="habilidades" id="habilidades">
+        <div class="contenedor-habilidades">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="95">
+                                95%
+                            </div>
+                            <h2>HTML & CSS</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="90">
+                                90%
+                            </div>
+                            <h2>BOOTSTRAP</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="85">
+                                85%
+                            </div>
+                            <h2>JAVASCRIPT</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="col">
+                        <div class="score">
+                            <div class="box">
+                                <div class="chart" data-percent="70">
+                                    70%
+                                </div>
+                                <h2>MYSQL</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="score">
+                            <div class="box">
+                                <div class="chart" data-percent="90">
+                                    90%
+                                </div>
+                                <h2>PHP</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="score">
+                            <div class="box">
+                                <div class="chart" data-percent="90">
+                                    90%
+                                </div>
+                                <h2>PHOTOSHOP</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion trabajos -->
+    <section class="trabajos" id="trabajos">
+        <h2>Mis Trabajos</h2>
+
+        <nav>
+            <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
+            <a href="javascript:void(0)" class="" id="disenio" onclick="verCategoria('front')">Front-End</a>
+            <a href="javascript:void(0)" class="" id="programacion" onclick="verCategoria('back')">Back-End</a>
+            <a href="javascript:void(0)" class="" id="animaciones" onclick="verCategoria('fullstack')">Full-stack</a> 
+        </nav>
+
+        <div class="galeria">
+            <div class="item front">
+                <img src="img/trabajo1.png" alt="">
+                <div class="info">
+                    <h3>Titulo trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver trabajo</a>
+                </div>
+            </div>
+            <div class="item back">
+                <img src="img/trabajo2.png" alt="">
+                <div class="info">
+                    <h3>Titulo Trabajo</h3>
+                    <span>mysql</span><span>Python</span>
+                    <a href="#">Ver trabajo</a>
+                </div>
+            </div>
+            <div class="item fullstack">
+                <img src="img/trabajo3.png" alt="">
+                <div class="info">
+                    <h3>Titulo trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span><span>mysql</span><span>Python</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item front">
+                <img src="img/trabajo4.png" alt="">
+                <div class="info">
+                    <h3>Titulo trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver trabajo</a>
+                </div>
+            </div>
+            <div class="item back">
+                <img src="img/trabajo5.png" alt="">
+                <div class="info">
+                    <h3>Titulo Trabajo</h3>
+                    <span>mysql</span><span>Python</span>
+                    <a href="#">Ver trabajo</a>
+                </div>
+            </div>
+            <div class="item fullstack">
+                <img src="img/trabajo6.png" alt="">
+                <div class="info">
+                    <h3>Titulo trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span><span>mysql</span><span>Python</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion contacto -->
+    <section class="contacto" id="contacto">
+        <div class="contenedor-contacto">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="info">
+                        <h3>Email:</h3>
+                        <p>MI MAIL</p>
+                    </div>
+                    <div class="info">
+                        <h3>Telefono</h3>
+                        <p>Numero Telefono</p>
+                    </div>
+                    <div class="info">
+                        <h3>Pais:</h3>
+                        <p>Argentina</p>
+                    </div>
+                </div>
+            <div class="col">
+                <input type="text" placeholder="Nombre...">
+                <input type="text" placeholder="Correo...">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <input type="submit" value="Enviar" class="btn">
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Creado por Pedro Garganta</p>
+    </footer>
+    <script src="app.js"></script>
+
+</body>
+</html>
